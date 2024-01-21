@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "HightLight",
+  "version": "1.0",
+
+  "description": "highlight what you select",
+  "icons": {
+    "16": "img/hello.png",
+    "48": "img/hello.png",
+    "128": "img/icon.jpg"
+  },
+
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "img/icon.png"
+  },
+  "default_locale": "zh_CN",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "css": ["styles/index.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["activeTab", "storage", "scripting", "tabs"],
+  "homepage_url": "https://www.sekyoro.top"
+}

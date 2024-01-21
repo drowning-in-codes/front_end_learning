@@ -1,0 +1,9 @@
+:root {
+  --color: #fff;
+  --bgcolor: blue;
+}
+:is(p, div)::selection {
+  color: var(--color);
+  background-color: var(--bgcolor);
+  text-shadow: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>Choose one color for your HighLight</p>
+    <div
+      style="
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        align-items: center;
+      "
+    >
+      <div class="circle normal" data-color="normal"></div>
+      <div class="circle blue" data-color="blue"></div>
+      <div class="circle pink" data-color="pink"></div>
+      <div class="circle orange" data-color="orange"></div>
+      <div class="circle green" data-color="green"></div>
+    </div>
+    <div>
+      <label for="color" style="font-size: 18px">自定义颜色</label>
+      <div class="input-color">
+        <input
+          placeholder="输入你想要的颜色e.g.(#6be585)"
+          class="color-select"
+          type="text"
+          name="color"
+        />
+        <button class="btn">确定</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
